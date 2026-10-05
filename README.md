@@ -7,11 +7,11 @@
 
 ### Process Investigation
 
-![LinuxCity Process Investigation](screenshots/Investigation%20Centre.png)
+![LinuxCity Process Investigation](screenshots/Investigation-Centre.png)
 
 ### Security Alerts
 
-![LinuxCity Security Events](screenshots/Security%20Events.png)
+![LinuxCity Security Events](screenshots/Security-Events.png)
 
 
 ### Local Linux Security Monitoring & Investigation Platform
