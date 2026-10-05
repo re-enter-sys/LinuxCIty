@@ -1,16 +1,17 @@
 ## 🖥️ LinuxCity in Action
 
+
 ### SOC Dashboard
 
-/home/killerg/projects/LinuxCity/screenshots/Dashboard.png
+![LinuxCity SOC Dashboard](screenshots/Dashboard.png)
 
 ### Process Investigation
 
-/home/killerg/projects/LinuxCity/screenshots/Investigation Centre.png
+![LinuxCity Process Investigation](screenshots/Investigation%20Centre.png)
 
 ### Security Alerts
 
-/home/killerg/projects/LinuxCity/screenshots/Security Events.png
+![LinuxCity Security Events](screenshots/Security%20Events.png)
 
 
 ### Local Linux Security Monitoring & Investigation Platform
