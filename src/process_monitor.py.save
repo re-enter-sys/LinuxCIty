@@ -1,0 +1,40 @@
+
+from datetime import datetime
+
+
+def get_processes():
+    processes = []
+
+    for proc in psutil.process_iter(
+        [
+            "pid",
+            "ppid",
+            "name",
+            "username",
+            "status",
+            "cpu_percent",
+            "memory_percent",
+        ]
+    ):
+        try:
+            info = proc.info
+
+            processes.append({
+                "pid": info["pid"],
+      
+    return processes
+
+
+def build_process_tree(processes):
+    tree = {}
+
+    for process in processes:
+        ppid = process["ppid"]
+
+        if ppid not in tree:
+            tree[ppid] = []
+
+        tree[ppid].append(process)
+
+    return tree
+

@@ -1,0 +1,77 @@
+[
+  {
+    "alert_id": "LC-20261005231809737544",
+    "timestamp": "2026-10-05T23:18:09.737475",
+    "pid": 99999,
+    "process_name": "linuxcity-test",
+    "username": "root",
+    "parent": "bash",
+    "cpu_percent": 95.0,
+    "memory_percent": 1.0,
+    "network_connections": 1,
+    "risk_score": 90,
+    "severity": "CRITICAL",
+    "reasons": [
+      "LinuxCity controlled alert test"
+    ],
+    "status": "OPEN"
+  },
+  {
+    "alert_id": "LC-20261005235050451063",
+    "timestamp": "2026-10-05T23:50:50.451032",
+    "pid": 88888,
+    "process_name": "linuxcity-v06-test",
+    "username": "root",
+    "parent": "bash",
+    "exe": "/tmp/linuxcity-v06-test",
+    "cmdline": [
+      "/tmp/linuxcity-v06-test"
+    ],
+    "cpu_percent": 95.0,
+    "memory_percent": 2.0,
+    "network_connections": 1,
+    "risk_score": 100,
+    "severity": "CRITICAL",
+    "reasons": [
+      "Controlled LinuxCity v0.6 detection test"
+    ],
+    "detections": [
+      {
+        "rule_id": "LC-R001",
+        "name": "Root Process Execution",
+        "mitre_id": "T1078",
+        "mitre_name": "Valid Accounts",
+        "severity": "MEDIUM"
+      },
+      {
+        "rule_id": "LC-R002",
+        "name": "Suspicious Temporary Execution",
+        "mitre_id": "T1204",
+        "mitre_name": "User Execution",
+        "severity": "HIGH"
+      },
+      {
+        "rule_id": "LC-R003",
+        "name": "Shell Spawned Process",
+        "mitre_id": "T1059",
+        "mitre_name": "Command and Scripting Interpreter",
+        "severity": "MEDIUM"
+      },
+      {
+        "rule_id": "LC-R004",
+        "name": "High Resource Utilization",
+        "mitre_id": "T1496",
+        "mitre_name": "Resource Hijacking",
+        "severity": "HIGH"
+      },
+      {
+        "rule_id": "LC-R005",
+        "name": "Network Active Process",
+        "mitre_id": "T1071",
+        "mitre_name": "Application Layer Protocol",
+        "severity": "MEDIUM"
+      }
+    ],
+    "status": "OPEN"
+  }
+]
